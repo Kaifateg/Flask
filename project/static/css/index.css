@@ -42,3 +42,41 @@ img {
     margin-right: auto;
     display: block;
 }
+.note-entry {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.note-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+a, button, input, textarea {
+    font-family: inherit;
+    font-size: 14px;
+}
+form {
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

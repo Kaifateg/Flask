@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+    <h1>Дневник программиста</h1>
+
+    <form action="/дневник_программиста" method="POST">
+        <label for="title_note">Заголовок записи:</label><br>
+        <input type="text" id="title_note" name="title_note" required><br>
+
+        <label for="note">Текст записи:</label><br>
+        <textarea id="note" name="note" rows="4" required></textarea><br>
+
+        <button type="submit">Добавить запись</button>
+    </form>
+
+    <h2>Добавленные заметки:</h2>
+
+    {% if notes %}
+        {% for title, content in notes.items() %}
+            <div class="note-entry">
+                <span class="note-title">{{ title }}</span>
+                <p>{{ content }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Заметок пока нет.</p>
+    {% endif %}
+
+    <p><a href="/">Вернуться к списку тем</a></p>
+{% endblock %}

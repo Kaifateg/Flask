@@ -3,72 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приложение-блог Flask</title>
+    <title>Базовый шаблон></title>
     <link rel="stylesheet" href="..\static\css\index.css">
 </head>
 <body>
-    <header>
-        <h1>Приложение-блог Flask начинающего разработчика</h1>
-        <p>На этой странице собрана информацуия об изученных темах</p>
-    </header>
-    <main>
-        <table>
-            <caption><b>Пройденные темы</b></caption>
-
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Основы языка программирования Python</th>
-                    <th>Система контроля версий Git</th>
-                    <th>ОС Linux: основы процессов и потоков</th>
-                    <th>Алгоритмы и структуры данных</th>
-                    <th>Базы данных</th>
-                    <th>Расширенные возможности Python</th>
-                    <th>Фреймворк Flask</th>
-                    <th>Фреймворк Django</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <th><i>Процент выполнения темы</i></th>
-                    <td>99%</td>
-                    <td>99%</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th><i>Процент выполнения домашнего задания</i></th>
-                    <td>100%</td>
-                    <td>100%</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th><i>Комментарии</i></th>
-                    <td>Проект Blackjack</td>
-                    <td>Проект Moneybox</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-    <footer>
-        <a href="https://github.com/Kaifateg">Ссылка на страницу Github</a>
-        <img src="..\static\img\front_picture.jpg">
-    </footer>
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
