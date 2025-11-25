@@ -1,9 +1,44 @@
 body {
+    background-color: #F4F4F4;
+    color: #333;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+header, footer {
     text-align: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
 }
-h1 {
-    font-family: "Times New Roman", Georgia, Serif;
+main {
+    padding: 0 20px;
 }
-p {
-    font-size: small;
+table {
+    background-color: #FFFFFF;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+thead th {
+    background-color: #f2f2f2;
+    color: black;
+}
+tbody th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+img {
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
