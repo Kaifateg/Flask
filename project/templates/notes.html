@@ -6,6 +6,9 @@
         <label for="title_note">Заголовок записи:</label><br>
         <input type="text" id="title_note" name="title_note" required><br>
 
+        <label for="subtitle_note">Подзаголовок:</label><br>
+        <input type="text" id="subtitle_note" name="subtitle_note"><br>
+
         <label for="note">Текст записи:</label><br>
         <textarea id="note" name="note" rows="4" required></textarea><br>
 
@@ -15,10 +18,13 @@
     <h2>Добавленные заметки:</h2>
 
     {% if notes %}
-        {% for title, content in notes.items() %}
+        {% for note in notes %}
             <div class="note-entry">
-                <span class="note-title">{{ title }}</span>
-                <p>{{ content }}</p>
+                <span class="note-title">{{ note.title }}</span>
+                {% if note.subtitle %}
+                   <p class="note-subtitle">{{ note.subtitle }}</p>
+                {% endif %}
+                <p>{{ note.text }}</p>
             </div>
         {% endfor %}
     {% else %}
