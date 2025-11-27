@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block content %}
+    <h1>Добро пожаловать на сайт. Зарегистрируйтесь или войдите</h1>
+    <form action="{{ url_for('register') }}" method="GET">
+        <button type="submit">Регистрация</button>
+    </form>
+    <form action="{{ url_for('login') }}" method="GET">
+        <button type="submit">Вход</button>
+    </form>
+{% endblock %}

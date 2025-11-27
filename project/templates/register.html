@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% block content %}
+    <h1>Регистрация</h1>
+
+    <form action="/register" method="POST">
+        <label for="username">Логин:</label><br>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">enail:</label><br>
+        <input type="text" id="email" name="email" required><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+{% endblock %}
